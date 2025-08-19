@@ -1680,3 +1680,71 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* My Modifications: */
+.education-tile {
+  display: flex;
+  flex-direction: column;      /* Stack image above details */
+  align-items: center;         /* Center horizontally */
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.education-tile,
+.education-tile * {
+  color: #fff !important;             /* White text */
+}
+
+.edu-img {
+  width: 80%;
+  height: auto;
+  margin: 0 0 1rem 0;          /* Space below image */
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.edu-details h3 {
+  margin-top: 0;
+  color: #000000;
+}
+
+.edu-details p {
+  margin: 0.3rem 0;
+}
+
+
+/* Modification for work experience tile
+ */
+ .experience-tile {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.exp-img {
+  width: 120px;
+  height: auto;
+  margin-right: 1.5rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.exp-details h3 {
+  margin-top: 0;
+  color: #0078D4;
+}
+
+.exp-details p {
+  margin: 0.3rem 0;
+}
+
+.exp-details ul {
+  margin: 0.5rem 0 0 1rem;
+  padding-left: 1rem;
+}
