@@ -1809,7 +1809,7 @@ input, select, textarea {
 
 .activity-logo {
   width: 80%;                  /* Larger image, adjust as needed */
-  max-width: 180px;
+  /* max-width: 180px; */
   height: auto;
   margin: 0 0 1rem 0;
   border-radius: 6px;
@@ -1823,6 +1823,38 @@ input, select, textarea {
 }
 
 .activity-details h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+
+  /* projects modifiations  */
+}.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-logo {
+  width: 80%;
+  max-width: 90vw;
+  height: auto;
+  margin: 0 0 1rem 0;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.project-details h3,
+.project-details p {
+  color: #fff !important;
+  margin: 0.3rem 0;
+}
+
+.project-details h3 {
   margin-top: 0;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
