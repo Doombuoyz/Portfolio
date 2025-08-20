@@ -1718,33 +1718,112 @@ input, select, textarea {
 
 /* Modification for work experience tile
  */
- .experience-tile {
+.experience-tile {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;      /* Stack image above details */
+  align-items: center;         /* Center horizontally */
   margin-bottom: 2rem;
-  background-color: #f4f4f4;
+  background-color: transparent;
+  border: 2px solid #fff;
   padding: 1rem;
   border-radius: 8px;
 }
 
+.experience-tile,
+.experience-tile * {
+  color: #fff !important;             /* White text */
+}
+
 .exp-img {
-  width: 120px;
+  width: 80%;
   height: auto;
-  margin-right: 1.5rem;
+  margin: 0 0 1rem 0;          /* Space below image */
   border-radius: 6px;
   object-fit: cover;
 }
 
 .exp-details h3 {
   margin-top: 0;
-  color: #0078D4;
+  color: #000000;
 }
 
 .exp-details p {
   margin: 0.3rem 0;
 }
 
-.exp-details ul {
-  margin: 0.5rem 0 0 1rem;
-  padding-left: 1rem;
+
+/* Use this for your certifications section to match education/work tile style */
+#certifications {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 2rem 0;
+}
+
+.cert-tile {
+  display: flex;
+  flex-direction: column;      /* Stack image above details */
+  align-items: center;         /* Center horizontally */
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cert-logo {
+  width: 80%;                /* Larger image, adjust as needed */
+  /* max-width: 90vw; */
+  height: auto;
+  margin: 0 0 1rem 0;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.cert-details h3,
+.cert-details p {
+  color: #fff !important;      /* White text */
+  margin: 0.3rem 0;
+}
+
+.cert-details h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+/* Extra curricular activities  */
+#Extra {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 2rem 0;
+}
+
+.activity-tile {
+  display: flex;
+  flex-direction: column;      /* Stack image above details */
+  align-items: center;         /* Center horizontally */
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.activity-logo {
+  width: 80%;                  /* Larger image, adjust as needed */
+  max-width: 180px;
+  height: auto;
+  margin: 0 0 1rem 0;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.activity-details h3,
+.activity-details p {
+  color: #fff !important;      /* White text */
+  margin: 0.3rem 0;
+}
+
+.activity-details h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
